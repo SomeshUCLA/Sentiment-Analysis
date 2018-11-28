@@ -1,87 +1,54 @@
-# Project Title
+# Sentiment Analysis
 
-One Paragraph of project description goes here
+Somesh Srivastava
 
-## Getting Started
+Sep 12th, 2018
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Summary
 
-### Prerequisites
+This is my code for R based implementation for a kaggle project for Prediction of Stock Market movements  using 8 years daily news headlines.
 
-What things you need to install the software and how to install them
+The objective is to find if news headlines on a particular days has any prediction power over Stock Market Movement.
 
-```
-Give examples
-```
+Using sentiment mapping models are fitted based on logit and elastic net method. Using ROC curve and also regressing predicted values against true values models have been tested for accuracy.  
 
-### Installing
 
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+## Data Source
 
-```
-Give the example
-```
+1. News data: top 25 headlines historical news headlines from Reddit WorldNews Channel (Date: 8/8/2008 to 7/1/2016) (Source:Kaggle)\
 
-And repeat
+2. Stock data: Dow Jones Industrial Average (DJIA). (Source: Kaggle)<br>
+  "1" when DJIA Adj Close value rose or stayed as the same;<br>
+  "0" when DJIA Adj Close value decreased.<br>
+  
+ DJIA_Headline_News.csv file
+ columns: Date, Label (DJIA movements binary 1/0), Top 25 news (one column for each)
 
-```
-until finished
-```
 
-End with an example of getting some data out of the system or using it for a little demo
+## R Package Requirements
 
-## Running the tests
+data.table
+tm
+glmnet
+ggplot2
+pROC
+SnowballC
+dplyr
+wordcloud
+ROCR
+stargazer
+sandwich
+lmtest
 
-Explain how to run the automated tests for this system
+## Jupiter Notebook R Files
 
-### Break down into end to end tests
+The implementation of the project was done in the following Jupyter Notebooks:
 
-Explain what these tests test and why
+* Sentiment Analysis.ipynb
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Prof. Lochstoer for illustrative lecture and guidance
+
