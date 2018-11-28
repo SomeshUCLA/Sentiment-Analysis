@@ -28,18 +28,18 @@ Using sentiment mapping models are fitted based on logit and elastic net method.
 
 ## R Package Requirements
 
-data.table
-tm
-glmnet
-ggplot2
-pROC
-SnowballC
-dplyr
-wordcloud
-ROCR
-stargazer
-sandwich
-lmtest
+* data.table
+* tm
+* glmnet
+* ggplot2
+* pROC
+* SnowballC
+* dplyr
+* wordcloud
+* ROCR
+* stargazer
+* sandwich
+* lmtest
 
 ## Jupiter Notebook R Files
 
